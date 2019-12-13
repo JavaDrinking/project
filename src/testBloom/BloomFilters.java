@@ -28,7 +28,6 @@ public class BloomFilters {
         int first = hashcode_1(key);
         int second = hashcode_2(key);
         int third = hashcode_3(key);
-
         array[first % arraySize] = 1;
         array[second % arraySize] = 1;
         array[third % arraySize] = 1;
