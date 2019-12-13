@@ -10,7 +10,6 @@ public class IdWorker {
     private long datacenterId;
     private long sequence;
     private long twepoch = 1288834974657L;
-    String str = "11";
 
     private long workerIdBits = 5L;
     private long datacenterIdBits = 5L;
@@ -30,7 +29,6 @@ public class IdWorker {
     private long lastTimestamp = -1L;
 
     public IdWorker(long workerId, long datacenterId, long sequence) {
-        str.hashCode();
         // sanity check for workerId
         // 这儿不就检查了一下，要求就是你传递进来的机房id和机器id不能超过32，不能小于0
         if (workerId > maxWorkerId || workerId < 0) {
